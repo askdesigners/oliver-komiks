@@ -35,6 +35,9 @@
         }
         #NavigationBar{
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .NavButton{
             padding: 10px;
@@ -43,6 +46,7 @@
             text-decoration: none;
             transition: color 0.3s;
             border: 1px solid black;
+            margin: 0 10px;
         }
         .NavButton:hover, .active{
             color:lightsteelblue;
@@ -51,6 +55,9 @@
         ul {
             text-align: left;
         }
+        .Logo{
+            height: 70px;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +65,7 @@
         <a class="NavButton active" href="index.html">Information</a>
         <a class="NavButton" href="komiks.html">Komiks</a>
         <a class="NavButton" href="shop.html">Shop</a>
-        <img src="" alt="Olivers Logo">
+        <img class="Logo" src="images/logo.png" alt="Olivers Logo">
     </div>
     <div id="PageContent">
         <h1>
