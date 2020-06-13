@@ -29,16 +29,19 @@
             transition: color 0.3s;
             border: 1px solid black;
         }
-        .NavButton:hover{
+        .NavButton:hover, .active{
             color:lightsteelblue;
             background:gold;
+        }
+        .KomikPicture{
+            width: 33%;
         }
     </style>
 </head>
 <body>
     <div id="NavigationBar">
         <a class="NavButton" href="index.html">Information</a>
-        <a class="NavButton" href="komiks.html">Komiks</a>
+        <a class="NavButton active" href="komiks.html">Komiks</a>
         <a class="NavButton" href="shop.html">Shop</a>
         <img src="" alt="Olivers Logo">
     </div>
@@ -49,6 +52,25 @@
         <h2>
             Check them out!
         </h2>
+        <div class="Komiks">
+            <div class="KomikBlock">
+                <h1>Policajt</h2>
+                <img src="komiks/komiks-16.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-17.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-18.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-19.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-20.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-21.jpg" alt="" class="KomikPicture">
+            </div>
+            <div class="KomikBlock">
+                <h2>Komik name 2</h2>
+                <img src="komiks/komiks-6.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-7.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-8.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-9.jpg" alt="" class="KomikPicture">
+                <img src="komiks/komiks-10.jpg" alt="" class="KomikPicture">
+            </div>
+        </div>
     </div>
 </body>
 </html>

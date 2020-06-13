@@ -11,6 +11,23 @@
 
     <link rel="stylesheet" href="css/${styles.css}">
     <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
         body{
             color:darkslategray;
             font-family: fantasy;
@@ -27,15 +44,18 @@
             transition: color 0.3s;
             border: 1px solid black;
         }
-        .NavButton:hover{
+        .NavButton:hover, .active{
             color:lightsteelblue;
             background:gold;
+        }
+        ul {
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <div id="NavigationBar">
-        <a class="NavButton" href="index.html">Information</a>
+        <a class="NavButton active" href="index.html">Information</a>
         <a class="NavButton" href="komiks.html">Komiks</a>
         <a class="NavButton" href="shop.html">Shop</a>
         <img src="" alt="Olivers Logo">
@@ -45,12 +65,24 @@
             The writer is <a href="about-oliver.html">Oliver Cole</a>.
         </h1>
         <h2>
-            I have czech books and english ones. If you want to see it click here <a href="komiks.html">(Komiks)</a>.
+            I have czech komik books. If you want to see it click here <a href="komiks.html">(Komiks)</a>.
         </h2>
-        <p>
-            I really like <a href="https://minecraft.gamepedia.com/Minecraft_Wiki">Minecraft</a>.
-        </p>and if you want to by one click here <a href="shop.html">shop</a>
-        <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/2/28/Taiga_snowy.png" alt="">
+        <ul>
+            <li>
+                I really like <a href="https://minecraft.gamepedia.com/Minecraft_Wiki">Minecraft</a>.
+            </li>
+            <li>
+                I have a minecraft server. You can join it <a href="">here</a>.
+            </li>
+            <li>
+                I sell komiks and if you want to by one click <a href="shop.html">here</a>
+            </li>
+            <li>
+                I read all the wimpy kid books (in czech).
+            </li>
+        </ul>
+        </p>
+        
     </div>
 </body>
 </html>
